@@ -1,0 +1,20 @@
+--- jabbin-2.0beta2a/3party/qca/qca-tls.cpp~	2006-08-10 12:09:46.000000000 +0200
++++ jabbin-2.0beta2a/3party/qca/qca-tls.cpp	2007-03-05 16:43:58.088624774 +0100
+@@ -457,7 +457,7 @@
+ #ifdef WIN32
+ 				r = d2i_RSA_PUBKEY(NULL, (const unsigned char **)&p, len);
+ #else
+-    #if OPENSSL_VERSION_NUMBER >  0x0090707fL
++    #if OPENSSL_VERSION_NUMBER >  0x009070cfL
+ 				r = d2i_RSA_PUBKEY(NULL, (const unsigned char **)&p, len);
+     #else
+ 				r = d2i_RSA_PUBKEY(NULL, (unsigned char **)&p, len);
+@@ -810,7 +810,7 @@
+ #ifdef WIN32
+ 		X509 *t = d2i_X509(NULL, (const unsigned char **)&p, len);
+ #else
+-    #if OPENSSL_VERSION_NUMBER >  0x0090707fL
++    #if OPENSSL_VERSION_NUMBER >  0x009070cfL
+ 		X509 *t = d2i_X509(NULL, (const unsigned char **)&p, len);
+     #else
+ 		X509 *t = d2i_X509(NULL, (unsigned char **)&p, len);

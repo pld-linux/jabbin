@@ -1,5 +1,6 @@
 %define	_beta beta2a
 Summary:	Instant messaging and VoIP Jabber client
+Summary(pl.UTF-8):	Klient komunikatora Jabber i VoIP
 Name:		jabbin
 Version:	2.0
 Release:	0.%{_beta}.1
@@ -12,6 +13,7 @@ URL:		http://jabbin.com/
 BuildRequires:	expat-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel
+BuildRequires:	qmake
 BuildRequires:	qt-devel
 BuildRequires:	speex-devel
 BuildRequires:	zlib-devel
@@ -19,6 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Jabbin is a Instant messaging and VoIP Jabber client.
+
+%description -l pl.UTF-8
+Jabbin to klient komunikatora Jabber i VoIP.
 
 %prep
 %setup -q -n %{name}-%{version}%{_beta}

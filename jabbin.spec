@@ -16,7 +16,7 @@ BuildRequires:	openssl-devel
 BuildRequires:	qmake
 BuildRequires:	qt-devel
 BuildRequires:	speex-devel
-BuildRequires:	xorg-lib-libXtst
+BuildRequires:	xorg-lib-libXtst-devel
 BuildRequires:	xorg-proto-scrnsaverproto-devel
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
